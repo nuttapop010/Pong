@@ -124,10 +124,10 @@ public class PongGame extends SurfaceView implements  Runnable{
                 float x1 = a+c;
                 float x2 = a+(c*3);
                 float d = mBall.getRect().left;
-                float e = mBall.getRect().right;
+                float e = mBall.getRect().left;
                 float y = (d-e)/2;
             if(y <= x2 && y >= x1) {
-                mScore= mScore+=20;
+                mScore= mScore+=100;
             }
             else {
                 mScore= mScore+=10;
